@@ -7,11 +7,13 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Offers from "./pages/Home";
 
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
